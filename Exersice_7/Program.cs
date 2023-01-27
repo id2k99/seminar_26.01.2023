@@ -21,6 +21,14 @@ Console.WriteLine($" третья цифра: {otvet}"); */
 
 Console.Clear();
 Console.WriteLine(" Введите 3-х значное число: ");
+
 string number = Console.ReadLine();
 string otvet = Convert.ToString(number[number.Length -1]);
+
+if (number.Length <3 || number.Length > 3 )
+{
+    Console.WriteLine(" Число не трёхзначное");
+    return;
+}
+
 Console.WriteLine($" третья цифра: {otvet}");

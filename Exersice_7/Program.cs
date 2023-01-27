@@ -22,5 +22,5 @@ Console.WriteLine($" третья цифра: {otvet}"); */
 Console.Clear();
 Console.WriteLine(" Введите 3-х значное число: ");
 string number = Console.ReadLine();
-string otvet = Convert.ToString(number[2]);
+string otvet = Convert.ToString(number[number.Length -1]);
 Console.WriteLine($" третья цифра: {otvet}");
